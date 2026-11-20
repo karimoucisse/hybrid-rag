@@ -1,7 +1,7 @@
 [project]
-name = "back"
+name = "hybrid_rag"
 version = "0.1.0"
-description = "Add your description here"
+description =  "A hybrid retrieval-augmented generation (RAG) system that combines vector and keyword search for efficient information retrieval and generation."
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
@@ -11,6 +11,7 @@ dependencies = [
     "langchain-community>=0.4.2",
     "langchain-core>=1.8.4",
     "langchain-text-splitters>=1.1.3",
+    "ollama>=0.6.3",
     "pathlib>=1.0.1",
     "pydantic>=2.14.4",
     "pydantic-settings>=2.16.3",

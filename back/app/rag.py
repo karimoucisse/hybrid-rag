@@ -7,6 +7,9 @@ from langchain_ollama import ChatOllama
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.runnables import Runnable
+
+from langchain_community.retrievers import BM25Retriever
+from langchain_core.documents import Document
 from functools import lru_cache
 from typing import Iterator
 

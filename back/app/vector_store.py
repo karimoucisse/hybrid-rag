@@ -1,7 +1,8 @@
+from langchain_chroma import Chroma
+from langchain_ollama import OllamaEmbeddings
+
 from app.config import get_settings
 
-from langchain_ollama import OllamaEmbeddings
-from langchain_chroma import Chroma
 
 def get_vector_store() -> Chroma:
 	settings = get_settings()

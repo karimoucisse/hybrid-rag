@@ -1,4 +1,4 @@
-from ingestion import file_loader
+from app.ingestion import ingest_file
 # from fastapi import FastAPI
 
 # app = FastAPI()
@@ -9,8 +9,8 @@ from ingestion import file_loader
 
 def main():
     try:
-        text = file_loader('data/wars1.pdf')
-        print(text)
+        text = ingest_file('data/wars1.pdf')
+        # print(text)
     except ValueError as e:
         print(f"Error: {e}")
 

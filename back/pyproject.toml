@@ -5,6 +5,7 @@ description =  "A hybrid retrieval-augmented generation (RAG) system that combin
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "chroma>=0.2.0",
     "fastapi>=0.165.0",
     "langchain>=1.5.2",
     "langchain-chroma>=1.1.0",

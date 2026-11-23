@@ -63,8 +63,7 @@ def stream_answer(query: UserQuestion) -> Iterator[str]:
         chain = get_chain()
 
         for chunk in chain.stream({"context": context, "question": query.query}):
-            yield chunk
-			# sse({"token": chunk})
+            yield sse({"token": chunk})
         yield sse({"done": True})
     except Exception as e:
         yield sse({"error": str(e)})

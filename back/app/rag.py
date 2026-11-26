@@ -15,14 +15,13 @@ from typing import Iterator
 
 PROMPT = ChatPromptTemplate.from_template(
 		"""You are a helpful assistant. Use the following pieces of context to answer the question at the end.
-		Respond in the same language as the question.
 		the context is below, delimited by triple backticks.
+		Respond in the same language as the question.
 
 		context: ```{context}```
 
 		Question: {question}
-
-		If you don't know the answer, just say that you don't know, don't try to make up an answer, just say "I don't know".
+		If you don't know the answer, just say that you don't know, don't try to make up an answer, just say you don't know, in the same language as the question.
 
 		Answer:
 
